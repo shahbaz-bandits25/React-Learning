@@ -8,6 +8,7 @@ import Test from './video-11';
 import StateManagementLectrue from './video-12';
 import StateManagementLectrueInClassComponent from './video-13';
 import GetInputBoxValue from "./video-16";
+import RegistrationForm from "./video-18";
 
 function App() {
     const [email,setEmail] = useState('azfar@gmail.com');
@@ -30,7 +31,8 @@ function App() {
     {/*    <button onClick={()=>{setEmail('abc@gmail.com')}}>Update Email</button>*/}
     {/*    <button onClick={()=>{setCity('Islamabad')}}>Update City</button>*/}
 
-        <GetInputBoxValue />
+        {/*<GetInputBoxValue />*/}
+        <RegistrationForm/>
     </div>
   );
 }
