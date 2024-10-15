@@ -10,10 +10,12 @@ import StateManagementLectrueInClassComponent from './video-13';
 import GetInputBoxValue from "./video-16";
 import RegistrationForm from "./video-18";
 import User from "./video-21";
+import Car from "./Video-24";
 
 function App() {
     const [email,setEmail] = useState('azfar@gmail.com');
     const [city,setCity] = useState('Lahore');
+    const [car,setCar] = useState('Honda City');
 
     function getData() {
         alert("I'm a function exists in App component");
@@ -40,7 +42,11 @@ function App() {
         {/*<RegistrationForm/>*/}
 
     {/*    here in below Line of code we'll pass our function as a prop to our Component*/}
-        <User data={getData}/>
+    {/*    <User data={getData}/>*/}
+
+        <Car />
+        {/*<Car car={car}/>*/}
+        {/*<button onClick={()=>setCar('Honda Cvic')}>Update Car!</button>*/}
     </div>
   );
 }
